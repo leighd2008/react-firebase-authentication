@@ -10,6 +10,8 @@ import HomePage from "../Home/home";
 import AccountPage from "../Account/account";
 import AdminPage from "../Admin/admin";
 
+require("dotenv").config({ path: __dirname + "/.env" });
+
 const App = () => (
   <Router>
     <div>
