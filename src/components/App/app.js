@@ -9,6 +9,7 @@ import ForgotPasswordPage from "../ForgotPassword/forgotpassword";
 import HomePage from "../Home/home";
 import AccountPage from "../Account/account";
 import AdminPage from "../Admin/admin";
+import { withAuthentication } from "../Session/withAuthentication.js";
 
 require("dotenv").config({ path: __dirname + "/.env" });
 
@@ -29,4 +30,4 @@ const App = () => (
   </Router>
 );
 
-export default App;
+export default withAuthentication(App);
