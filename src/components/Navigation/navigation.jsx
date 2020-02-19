@@ -25,6 +25,9 @@ const NavigationAuth = () => (
       <Link to="/account">Account</Link>
     </li>
     <li>
+      <Link to="/admin">Admin</Link>
+    </li>
+    <li>
       <SignOutButton />
     </li>
   </ul>
